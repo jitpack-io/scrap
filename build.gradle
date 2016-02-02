@@ -14,10 +14,10 @@ buildscript {
 allprojects {
     repositories {
         jcenter()
-        maven {
-            url "https://jitpack.io"
-            credentials { username authToken }
-        }
+//        maven {
+//            url "https://jitpack.io"
+//            credentials { username authToken }
+//        }
     }
 
     apply plugin: "build-time-tracker"
