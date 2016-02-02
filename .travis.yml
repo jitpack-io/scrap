@@ -13,21 +13,15 @@ android:
     - '.+'
 
 install:
+      - cp init.gradle ~/.gradle/
       # Ensure Gradle wrapper is executable, download wrapper and show version
       - chmod +x ./gradlew; ls -l gradlew; ./gradlew wrapper -v
       # Download and show android dependencies
       # - ./gradlew androidDependencies
 
 script:
-      - ./gradlew clean assembleDebug
+      - ./gradlew -i clean assembleDebug
 
-before_cache:
-  - rm -f $HOME/.gradle/caches/modules-2/modules-2.lock
-
-cache:
-  directories:
-    - $HOME/.gradle/caches/
-    - $HOME/.gradle/wrapper/
+cache: off
 
 sudo: false
-
