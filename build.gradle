@@ -14,8 +14,6 @@ buildscript {
 
 allprojects {
     repositories {
-        //maven { url "file:/Users/ajermakovics/Library/Android/sdk/extras/android/m2repository/" }
-        //maven { url "file:/Users/ajermakovics/Library/Android/sdk/extras/google/m2repository/" }
         jcenter()
         maven {
             url "https://jitpack.io"
