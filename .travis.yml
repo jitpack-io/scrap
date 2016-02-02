@@ -13,6 +13,7 @@ android:
     - '.+'
 
 install:
+      - mkdir ~/.gradle
       - cp init.gradle ~/.gradle/
       # Ensure Gradle wrapper is executable, download wrapper and show version
       - chmod +x ./gradlew; ls -l gradlew; ./gradlew wrapper -v
