@@ -23,7 +23,7 @@ install:
 script:
       - ./gradlew -i clean assembleDebug --profile --refresh-dependencies
 
-after_success: cat reports/profile/profile-*.html
+after_success: cat build/reports/profile/profile-*.html
 
 cache: off
 
